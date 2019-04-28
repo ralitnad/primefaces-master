@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<component>
+   <tag>steps</tag>
+   <tagClass>org.primefaces.component.steps.StepsTag</tagClass>
+   <componentClass>org.primefaces.component.steps.Steps</componentClass>
+   <componentType>org.primefaces.component.Steps</componentType>
+   <componentFamily>org.primefaces.component</componentFamily>
+   <rendererType>org.primefaces.component.StepsRenderer</rendererType>
+   <rendererClass>org.primefaces.component.steps.StepsRenderer</rendererClass>
+   <parent>org.primefaces.component.menu.AbstractMenu</parent>
+   <description>Steps is a menu component that displays steps of a workflow.</description>
+   <interfaces>
+      <interface>
+         <name>org.primefaces.component.api.Widget</name>
+      </interface>
+   </interfaces>
+   <attributes>
+      <attribute>
+         <name>id</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <literal>true</literal>
+         <description>Unique identifier of the component in a namingContainer.</description>
+      </attribute>
+      <attribute>
+         <name>rendered</name>
+         <required>false</required>
+         <type>java.lang.Boolean</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>Boolean value to specify the rendering of the component, when set to false component will not be rendered.</description>
+      </attribute>
+      <attribute>
+         <name>binding</name>
+         <required>false</required>
+         <type>javax.faces.component.UIComponent</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>An el expression referring to a server side UIComponent instance in a backing bean.</description>
+      </attribute>
+      <attribute>
+         <name>widgetVar</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <ignoreInComponent>false</ignoreInComponent>
+         <description>Name of the client side widget.</description>
+      </attribute>
+      <attribute>
+         <name>model</name>
+         <required>false</required>
+         <type>org.primefaces.model.menu.MenuModel</type>
+         <description>MenuModel instance to create menus programmatically.</description>
+      </attribute>
+      <attribute>
+         <name>style</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <description>Style of main container element.</description>
+      </attribute>
+      <attribute>
+         <name>styleClass</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <description>Style class of main container.</description>
+      </attribute>
+      <attribute>
+         <name>activeIndex</name>
+         <required>false</required>
+         <type>java.lang.Integer</type>
+         <defaultValue>0</defaultValue>
+         <description>Index of the active tab. Default is 0.</description>
+      </attribute>
+      <attribute>
+         <name>readonly</name>
+         <required>false</required>
+         <type>java.lang.Boolean</type>
+         <defaultValue>true</defaultValue>
+         <description>Defines whether items would be clickable or not. Default is true.</description>
+      </attribute>
+   </attributes>
+   <resources>
+      <resource>
+         <name>components.css</name>
+      </resource>
+      <resource>
+         <name>jquery/jquery.js</name>
+      </resource>
+      <resource>
+         <name>core.js</name>
+      </resource>
+      <resource>
+         <name>components.js</name>
+      </resource>
+   </resources>
+</component>

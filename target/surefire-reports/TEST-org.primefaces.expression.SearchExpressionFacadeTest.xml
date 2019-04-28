@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="73" failures="0" name="org.primefaces.expression.SearchExpressionFacadeTest" time="0.111" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_202\jre\bin"/>
+    <property name="java.vm.version" value="25.202-b08"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\git_wkspace\ralitnad\primefaces-master"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\git_wkspace\ralitnad\primefaces-master"/>
+    <property name="java.runtime.version" value="1.8.0_202-b08"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_202\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\user\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 8.1"/>
+    <property name="classworlds.conf" value="C:\git_wkspace\ralitnad\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf969817204725745788.tmp"/>
+    <property name="sun.jnu.encoding" value="MS950"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_202\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_202/bin/server;C:/Program Files/Java/jre1.8.0_202/bin;C:/Program Files/Java/jre1.8.0_202/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Lenovo\FusionEngine;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Common Files\lenovo\easyplussdk\bin;C:\Users\user\AppData\Local\GitHubDesktop\bin;C:\work\eclipse;;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.3"/>
+    <property name="user.home" value="C:\Users\user"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="MS950"/>
+    <property name="user.name" value="user"/>
+    <property name="java.class.path" value="C:\work\eclipse\plugins\org.eclipse.m2e.maven.runtime_1.8.2.20171007-0216\jars\plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_202\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B clean install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_202"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_202\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_202\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\git_wkspace\ralitnad\primefaces-master\EMBEDDED"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveComponent_PreviousPrevious" time="0"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveComponent_FormChildNextNext" time="0"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveClientId_AbsoluteWithFormPrependIdFalse" time="0"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveComponents_SimpleMultiSearchExpressionResolver_ParentParent_IgnoreNoResult" time="0"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveClientIds_RelativeAndPFSAndWidgetVarAndFormParent" time="0"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveComponents_SimpleMultiSearchExpressionResolver_Parent" time="0"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveComponents_SimpleMultiSearchExpressionResolver" time="0"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveClientId_AbsoluteWithFormPrependIdFalse_InvokeOnComponent" time="0.001"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveClientId_AbsoluteWithFormPrependIdFalse_InvokeOnComponentSkipUnrendered" time="0.001"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveClientId_AbsoluteWithFormPrependIdFalse_InvokeOnComponentUnrendered" time="0.001"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveComponent_AbsoluteWithFormPrependIdFalse_InvokeOnComponentUnrendered" time="0.003"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveComponents_SimpleMultiSearchExpressionResolver_ParentParent" time="0.001"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveClientIds_MultiSearchExpressionResolver_ClientIdSearchExpressionResolver" time="0.001"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveComponent_Namingcontainer" time="0.001"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveClientIds_PFSMultipleIds" time="0"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveComponent_None" time="0.001"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveClientId_WidgetVar" time="0"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveClientId_ParentChild" time="0.001"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveComponent_NextNext" time="0"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveClientId_WidgetVarNext" time="0.038"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveComponent_WidgetVar" time="0"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveComponent_Absolute" time="0.001"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveComponent_AbsoluteForm" time="0.001"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveClientId_Parent" time="0"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveComponents_Id_FromRoot" time="0.001"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveComponent_WidgetVarNext" time="0.002"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveComponent_Previous" time="0.001"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveComponent_All" time="0.001"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveClientId_Form" time="0.001"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveComponent_ThisParent" time="0"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveClientId_All" time="0.001"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveClientId_Absolute" time="0.005"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveClientId_Root" time="0"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveComponent_Next" time="0"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveClientId_Namingcontainer" time="0.007"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveComponent_IgnoreNoResult" time="0"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveComponents_Id" time="0"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveComponent_ParentParent" time="0"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveClientId_None" time="0"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveComponent_Root" time="0.019"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveComponent_Parent" time="0"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveClientId_This" time="0"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveComponent_NoResult" time="0"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveComponents_Root" time="0"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveClientId_AbsoluteForm" time="0"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveClientId_AbsoluteId" time="0"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveComponent_ParentChild" time="0"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveComponent_Form" time="0"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveClientId_PFS" time="0"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveClientId_Relative" time="0.002"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveComponent_Relative" time="0.001"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveComponent_FormParent" time="0.002"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveComponent_This" time="0.001"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveComponent_AbsoluteNamingcontainerParent" time="0.003"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveComponent_AbsoluteKeywordStart" time="0"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveClientId_NonCombineableAllAndNone" time="0.001"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveComponentWithParentFallback" time="0.001"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveComponent_NamingcontainerNamingcontainer" time="0"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveClientIds_RelativeAndParent" time="0.001"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveClientIds_RelativeAndParentParent" time="0.001"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveClientIds_RelativeAndThisParent" time="0.001"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveComponents_RelativeAndThisParent" time="0"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveComponent_NotNestablePasstrough" time="0.001"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveClientIds_PFSNestedParenthese" time="0.001"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveClientId_AbsoluteNamingcontainer" time="0.001"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveClientId_AbsoluteKeywordStart" time="0.001"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveComponent_AbsoluteNamingcontainer" time="0.001"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveClientIdsWithParentFallback" time="0.001"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveClientId_AbsoluteNamingcontainerParent" time="0.001"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveComponents_RelativeAndParent" time="0.001"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveComponents_RelativeAndParentParent" time="0"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveComponent_NamingcontainerParent" time="0"/>
+  <testcase classname="org.primefaces.expression.SearchExpressionFacadeTest" name="resolveClientId_NotNestablePasstrough" time="0"/>
+</testsuite>

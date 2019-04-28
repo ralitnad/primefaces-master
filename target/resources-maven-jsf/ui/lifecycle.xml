@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<component>
+   <tag>lifecycle</tag>
+   <tagClass>org.primefaces.component.lifecycle.LifecycleTag</tagClass>
+   <componentClass>org.primefaces.component.lifecycle.Lifecycle</componentClass>
+   <componentType>org.primefaces.component.Lifecycle</componentType>
+   <componentFamily>org.primefaces.component</componentFamily>
+   <rendererType>org.primefaces.component.LifecycleRenderer</rendererType>
+   <rendererClass>org.primefaces.component.lifecycle.LifecycleRenderer</rendererClass>
+   <parent>javax.faces.component.UIComponentBase</parent>
+   <description/>
+   <interfaces>
+      <interface>
+         <name>org.primefaces.component.api.Widget</name>
+      </interface>
+   </interfaces>
+   <attributes>
+      <attribute>
+         <name>id</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <literal>true</literal>
+         <description>Unique identifier of the component in a namingContainer.</description>
+      </attribute>
+      <attribute>
+         <name>rendered</name>
+         <required>false</required>
+         <type>java.lang.Boolean</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>Boolean value to specify the rendering of the component, when set to false component will not be rendered.</description>
+      </attribute>
+      <attribute>
+         <name>binding</name>
+         <required>false</required>
+         <type>javax.faces.component.UIComponent</type>
+         <ignoreInComponent>true</ignoreInComponent>
+         <description>An el expression referring to a server side UIComponent instance in a backing bean.</description>
+      </attribute>
+      <attribute>
+         <name>widgetVar</name>
+         <required>false</required>
+         <type>java.lang.String</type>
+         <ignoreInComponent>false</ignoreInComponent>
+         <description>Name of the client side widget.</description>
+      </attribute>
+   </attributes>
+   <resources>
+      <resource>
+         <name>jquery/jquery.js</name>
+      </resource>
+      <resource>
+         <name>jquery/jquery-plugins.js</name>
+      </resource>
+      <resource>
+         <name>core.js</name>
+      </resource>
+      <resource>
+         <name>lifecycle/lifecycle.js</name>
+      </resource>
+      <resource>
+         <name>lifecycle/lifecycle.css</name>
+      </resource>
+   </resources>
+</component>

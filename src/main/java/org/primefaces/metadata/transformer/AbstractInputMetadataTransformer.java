@@ -1,0 +1,66 @@
+/**
+ * Copyright 2009-2018 PrimeTek.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+package org.primefaces.metadata.transformer;
+
+import java.io.IOException;
+import javax.faces.component.EditableValueHolder;
+import javax.faces.component.UIComponent;
+import javax.faces.component.UIInput;
+import javax.faces.component.html.HtmlInputSecret;
+import javax.faces.component.html.HtmlInputText;
+import javax.faces.context.FacesContext;
+import org.primefaces.component.inputtextarea.InputTextarea;
+import org.primefaces.context.PrimeApplicationContext;
+
+public abstract class AbstractInputMetadataTransformer implements MetadataTransformer {
+
+    @Override
+    public void transform(FacesContext context, PrimeApplicationContext applicationContext, UIComponent component) throws IOException {
+        if (component instanceof EditableValueHolder && component instanceof UIInput) {
+            transformInput(context, applicationContext, (UIInput) component);
+        }
+    }
+
+    protected abstract void transformInput(FacesContext context, PrimeApplicationContext applicationContext, UIInput component) throws IOException;
+
+    protected void setMaxlength(UIInput input, int maxlength) {
+        if (input instanceof HtmlInputText) {
+            ((HtmlInputText) input).setMaxlength(maxlength);
+        }
+        else if (input instanceof HtmlInputSecret) {
+            ((HtmlInputSecret) input).setMaxlength(maxlength);
+        }
+        else if (input instanceof InputTextarea) {
+            ((InputTextarea) input).setMaxlength(maxlength);
+        }
+    }
+
+    protected int getMaxlength(UIInput input) {
+        if (input instanceof HtmlInputText) {
+            return ((HtmlInputText) input).getMaxlength();
+        }
+        else if (input instanceof HtmlInputSecret) {
+            return ((HtmlInputSecret) input).getMaxlength();
+        }
+
+        return Integer.MIN_VALUE;
+    }
+
+    protected boolean isMaxlenghtSet(UIInput input) {
+        return getMaxlength(input) != Integer.MIN_VALUE;
+    }
+
+}

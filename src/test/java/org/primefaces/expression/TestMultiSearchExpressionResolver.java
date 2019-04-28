@@ -1,0 +1,25 @@
+package org.primefaces.expression;
+
+import java.util.ArrayList;
+import java.util.List;
+import javax.faces.component.UIComponent;
+import javax.faces.context.FacesContext;
+
+public class TestMultiSearchExpressionResolver  implements SearchExpressionResolver, MultiSearchExpressionResolver {
+
+    private ArrayList<UIComponent> components;
+
+    public TestMultiSearchExpressionResolver(ArrayList<UIComponent> components) {
+        this.components = components;
+    }
+
+    @Override
+    public UIComponent resolveComponent(FacesContext context, UIComponent source, UIComponent last, String expression, int options) {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
+    public void resolveComponents(FacesContext context, UIComponent source, UIComponent last, String expression, List<UIComponent> components, int options) {
+        components.addAll(this.components);
+    }
+}
